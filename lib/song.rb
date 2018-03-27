@@ -1,5 +1,5 @@
 class Song
-
+  require 'pry'
   attr_accessor :name, :artist, :genre
 
   @@count = 0
@@ -33,7 +33,7 @@ class Song
     @@genres.each do |g|
       @genre_count.key?(:g) ? @genre_count[:g] += 1 : @genre_count[:g] = 1
     end
-    
+    binding.pry
     @genre_count
   end
 
