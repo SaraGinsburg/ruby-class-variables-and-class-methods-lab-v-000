@@ -34,7 +34,7 @@ class Song
     @@genres.each do |g|
       @genre_count.key?(g) ? @genre_count[g] += 1 : @genre_count[g] = 1
     end
-    @@genres.uniq!
+    @@genres = @@genres.uniq
     @genre_count
   end
 
