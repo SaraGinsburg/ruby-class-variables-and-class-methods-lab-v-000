@@ -23,13 +23,13 @@ class Song
     @@genres
   end
 
-  def class.artists
+  def self.artists
   end
 
-  def class.genre_count
+  def self.genre_count
   end
 
-  def class.artist_count
+  def self.artist_count
   end
 
 end
