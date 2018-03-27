@@ -22,11 +22,11 @@ class Song
   end
 
   def self.genres
-    @@genres
+    @@genres.uniq
   end
 
   def self.artists
-    @@artists
+    @@artists.uniq
   end
 
   def self.genre_count
@@ -34,7 +34,6 @@ class Song
     @@genres.each do |g|
       @genre_count.key?(g) ? @genre_count[g] += 1 : @genre_count[g] = 1
     end
-    @@genres = @@genres.uniq
     @genre_count
   end
 
